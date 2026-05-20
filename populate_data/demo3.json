@@ -1,0 +1,193 @@
+{
+  "patient": {
+    "resourceType": "Patient",
+    "name": [{ "use": "official", "family": "Sharma", "given": ["Sumit", "Kumar"] }],
+    "gender": "male",
+    "birthDate": "1975-11-03",
+    "active": true,
+    "telecom": [
+      { "system": "phone", "value": "+91-98765-43210", "use": "mobile" },
+      { "system": "email", "value": "sumit.sharma@email.in", "use": "home" }
+    ],
+    "address": [
+      {
+        "use": "home",
+        "line": ["47 Sector 18, Noida"],
+        "city": "Noida",
+        "state": "Uttar Pradesh",
+        "postalCode": "201301",
+        "country": "IN"
+      }
+    ],
+    "maritalStatus": { "text": "Married" }
+  },
+
+  "medications": [
+    {
+      "medication_name": "Insulin Glargine 30 units",
+      "dosage": "Inject 30 units subcutaneously at bedtime — INADEQUATE GLYCAEMIC CONTROL, dose under review",
+      "authored_on": "2026-03-01"
+    },
+    {
+      "medication_name": "Amlodipine 10mg",
+      "dosage": "Take 1 tablet once daily — BP not controlled on current dose",
+      "authored_on": "2026-03-01"
+    },
+    {
+      "medication_name": "Furosemide 40mg",
+      "dosage": "Take 1 tablet twice daily for fluid overload",
+      "authored_on": "2026-04-22"
+    },
+    {
+      "medication_name": "Salbutamol Inhaler",
+      "dosage": "2 puffs every 4 hours as needed — ongoing bronchospasm",
+      "authored_on": "2026-04-22"
+    },
+    {
+      "medication_name": "IV Meropenem 1g",
+      "dosage": "Administer 1g IV every 8 hours — active sepsis protocol",
+      "authored_on": "2026-04-26"
+    }
+  ],
+
+  "conditions": [
+    {
+      "condition_name": "Uncontrolled Type 2 Diabetes Mellitus (HbA1c 11.4%)",
+      "severity": "Severe",
+      "onset": "2018-05-10"
+    },
+    {
+      "condition_name": "Hypertensive Crisis",
+      "severity": "Severe",
+      "onset": "2026-04-22"
+    },
+    {
+      "condition_name": "Acute Kidney Injury (Stage 3)",
+      "severity": "Severe",
+      "onset": "2026-04-23"
+    },
+    {
+      "condition_name": "COPD Exacerbation — Moderate-Severe",
+      "severity": "Severe",
+      "onset": "2026-04-21"
+    },
+    {
+      "condition_name": "Sepsis — Gram-negative bacteraemia suspected",
+      "severity": "Severe",
+      "onset": "2026-04-26"
+    },
+    {
+      "condition_name": "Fluid Overload with bilateral pulmonary oedema",
+      "severity": "Moderate",
+      "onset": "2026-04-24"
+    }
+  ],
+
+  "observations": [
+    {
+      "name": "Heart Rate",
+      "value": 118,
+      "unit": "beats/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T06:00:00Z"
+    },
+    {
+      "name": "Body Temperature",
+      "value": 39.2,
+      "unit": "°C",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T06:00:00Z"
+    },
+    {
+      "name": "Oxygen Saturation",
+      "value": 88,
+      "unit": "%",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T06:00:00Z"
+    },
+    {
+      "name": "Respiratory Rate",
+      "value": 28,
+      "unit": "breaths/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T06:00:00Z"
+    },
+    {
+      "name": "Body Weight",
+      "value": 94.5,
+      "unit": "kg",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T06:00:00Z"
+    },
+    {
+      "name": "HbA1c",
+      "value": 11.4,
+      "unit": "%",
+      "category": "laboratory",
+      "effective_date": "2026-04-26T07:30:00Z"
+    },
+    {
+      "name": "Fasting Blood Glucose",
+      "value": 318,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T06:30:00Z"
+    },
+    {
+      "name": "Serum Creatinine",
+      "value": 4.8,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T06:30:00Z"
+    },
+    {
+      "name": "Serum Potassium",
+      "value": 5.9,
+      "unit": "mmol/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T06:30:00Z"
+    },
+    {
+      "name": "White Blood Cell Count",
+      "value": 22.4,
+      "unit": "10^9/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T06:30:00Z"
+    },
+    {
+      "name": "Lactate",
+      "value": 4.2,
+      "unit": "mmol/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T06:30:00Z"
+    },
+    {
+      "name": "Procalcitonin",
+      "value": 18.6,
+      "unit": "ng/mL",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T06:30:00Z"
+    }
+  ],
+
+  "blood_pressure": {
+    "effective_date": "2026-04-28T06:00:00Z",
+    "systolic":  { "value": 188, "unit": "mmHg" },
+    "diastolic": { "value": 116, "unit": "mmHg" }
+  },
+
+  "diagnostic_reports": [
+    {
+      "report_name": "Chest X-Ray",
+      "conclusion": "CRITICAL FINDINGS: Bilateral perihilar airspace opacification consistent with pulmonary oedema. Cardiomegaly present. Blunting of bilateral costophrenic angles suggesting pleural effusions. No pneumothorax. Findings significantly worsened compared to admission film. ICU-level monitoring required."
+    },
+    {
+      "report_name": "Renal Function & Electrolytes Panel",
+      "conclusion": "CRITICAL: Serum creatinine 4.8 mg/dL (baseline 1.0) — Stage 3 Acute Kidney Injury. eGFR estimated <15 mL/min/1.73m². Hyperkalaemia (K+ 5.9 mmol/L) — risk of fatal arrhythmia. Urgent nephrology consultation. Dialysis may be required within 24–48 hours. NOT safe for discharge."
+    },
+    {
+      "report_name": "Sepsis & Infection Workup",
+      "conclusion": "CRITICAL: Procalcitonin markedly elevated at 18.6 ng/mL. Lactate 4.2 mmol/L — septic shock threshold met. Blood cultures pending. Broad-spectrum IV antibiotics initiated. Patient haemodynamically unstable. Immediate ICU transfer recommended. ABSOLUTELY NOT fit for discharge."
+    }
+  ]
+}

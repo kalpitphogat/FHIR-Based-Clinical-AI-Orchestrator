@@ -1,0 +1,176 @@
+{
+  "patient": {
+    "resourceType": "Patient",
+    "name": [{ "use": "official", "family": "Patel", "given": ["Anika", "Ravi"] }],
+    "gender": "female",
+    "birthDate": "1983-02-17",
+    "active": true,
+    "telecom": [
+      { "system": "phone", "value": "+44-7700-900382", "use": "mobile" },
+      { "system": "email", "value": "anika.patel@email.co.uk", "use": "home" }
+    ],
+    "address": [
+      {
+        "use": "home",
+        "line": ["29 Birchwood Road"],
+        "city": "Leicester",
+        "state": "England",
+        "postalCode": "LE3 9QT",
+        "country": "GB"
+      }
+    ],
+    "maritalStatus": { "text": "Married" }
+  },
+
+  "medications": [
+    {
+      "medication_name": "Metformin 1000mg",
+      "dosage": "Take 1 tablet twice daily with food",
+      "authored_on": "2025-09-14"
+    },
+    {
+      "medication_name": "Ramipril 5mg",
+      "dosage": "Take 1 tablet once daily in the morning",
+      "authored_on": "2025-09-14"
+    },
+    {
+      "medication_name": "Ferrous Sulfate 200mg",
+      "dosage": "Take 1 tablet twice daily — for iron deficiency anaemia, improving",
+      "authored_on": "2026-04-10"
+    },
+    {
+      "medication_name": "Paracetamol 500mg",
+      "dosage": "Take 2 tablets every 6 hours as needed — post-surgical pain, weaning off",
+      "authored_on": "2026-04-22"
+    }
+  ],
+
+  "conditions": [
+    {
+      "condition_name": "Type 2 Diabetes Mellitus — suboptimal control",
+      "severity": "Moderate",
+      "onset": "2020-08-05"
+    },
+    {
+      "condition_name": "Iron Deficiency Anaemia — recovering post appendectomy",
+      "severity": "Mild",
+      "onset": "2026-04-22"
+    },
+    {
+      "condition_name": "Post-laparoscopic appendectomy (Day 5)",
+      "severity": "Mild",
+      "onset": "2026-04-23"
+    },
+    {
+      "condition_name": "Mild Hypertension — controlled on Ramipril",
+      "severity": "Mild",
+      "onset": "2025-09-14"
+    }
+  ],
+
+  "observations": [
+    {
+      "name": "Heart Rate",
+      "value": 88,
+      "unit": "beats/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T07:30:00Z"
+    },
+    {
+      "name": "Body Temperature",
+      "value": 37.4,
+      "unit": "°C",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T07:30:00Z"
+    },
+    {
+      "name": "Oxygen Saturation",
+      "value": 97,
+      "unit": "%",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T07:30:00Z"
+    },
+    {
+      "name": "Respiratory Rate",
+      "value": 17,
+      "unit": "breaths/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T07:30:00Z"
+    },
+    {
+      "name": "Body Weight",
+      "value": 68.2,
+      "unit": "kg",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T07:30:00Z"
+    },
+    {
+      "name": "Haemoglobin",
+      "value": 9.8,
+      "unit": "g/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T08:00:00Z",
+      "_note": "ANOMALY: below normal (12–16 g/dL) but stable and trending up"
+    },
+    {
+      "name": "HbA1c",
+      "value": 8.1,
+      "unit": "%",
+      "category": "laboratory",
+      "effective_date": "2026-04-15T08:00:00Z",
+      "_note": "ANOMALY: above target of 7% — managed outpatient follow-up planned"
+    },
+    {
+      "name": "Fasting Blood Glucose",
+      "value": 152,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T06:30:00Z",
+      "_note": "ANOMALY: mildly elevated but stable, not crisis level"
+    },
+    {
+      "name": "Serum Ferritin",
+      "value": 11,
+      "unit": "ng/mL",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T08:00:00Z",
+      "_note": "ANOMALY: low ferritin confirming iron deficiency — oral iron initiated"
+    },
+    {
+      "name": "C-Reactive Protein",
+      "value": 22,
+      "unit": "mg/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T08:00:00Z",
+      "_note": "ANOMALY: mildly elevated — expected post-surgery, trending down from 68 on Day 1"
+    },
+    {
+      "name": "Serum Creatinine",
+      "value": 0.92,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T08:00:00Z"
+    }
+  ],
+
+  "blood_pressure": {
+    "effective_date": "2026-04-28T07:30:00Z",
+    "systolic":  { "value": 136, "unit": "mmHg" },
+    "diastolic": { "value": 86,  "unit": "mmHg" }
+  },
+
+  "diagnostic_reports": [
+    {
+      "report_name": "Post-operative Abdominal Assessment",
+      "conclusion": "Day 5 post laparoscopic appendectomy. Port sites healing well, no signs of wound infection or dehiscence. Abdomen soft and non-tender on palpation. Bowel sounds present. Patient tolerating oral fluids and light diet. No surgical complications identified. Surgical team satisfied with recovery trajectory."
+    },
+    {
+      "report_name": "Haematology Review — Anaemia",
+      "conclusion": "NOTED ANOMALY: Haemoglobin 9.8 g/dL — mild anaemia secondary to operative blood loss compounded by pre-existing iron deficiency. Ferritin critically low at 11 ng/mL. However, haemoglobin is stable and trending upward (was 8.4 on Day 1). Oral ferrous sulfate initiated. Transfusion threshold not met. Safe to continue oral iron as outpatient. Follow-up FBC in 4 weeks."
+    },
+    {
+      "report_name": "Diabetes Management Review",
+      "conclusion": "NOTED ANOMALY: HbA1c 8.1% and fasting glucose 152 mg/dL indicate suboptimal glycaemic control. However, values are stable and not acutely dangerous. Elevated glucose is partly attributable to surgical stress response. Patient is established on Metformin. Outpatient diabetology appointment booked within 2 weeks to review and optimise regimen. Not a barrier to discharge."
+    }
+  ]
+}

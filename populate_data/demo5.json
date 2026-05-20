@@ -1,0 +1,206 @@
+{
+  "patient": {
+    "resourceType": "Patient",
+    "name": [{ "use": "official", "family": "Williams", "given": ["Marcus", "Devon"] }],
+    "gender": "male",
+    "birthDate": "1968-09-30",
+    "active": true,
+    "telecom": [
+      { "system": "phone", "value": "+1-404-555-0283", "use": "mobile" },
+      { "system": "email", "value": "marcus.williams@email.com", "use": "home" }
+    ],
+    "address": [
+      {
+        "use": "home",
+        "line": ["834 Peachtree Blvd NE"],
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30308",
+        "country": "US"
+      }
+    ],
+    "maritalStatus": { "text": "Divorced" }
+  },
+
+  "medications": [
+    {
+      "medication_name": "Aspirin 81mg",
+      "dosage": "Take 1 tablet once daily — cardiac history",
+      "authored_on": "2024-01-15"
+    },
+    {
+      "medication_name": "Carvedilol 25mg",
+      "dosage": "Take 1 tablet twice daily for heart failure",
+      "authored_on": "2024-01-15"
+    },
+    {
+      "medication_name": "IV Piperacillin-Tazobactam 4.5g",
+      "dosage": "Administer 4.5g IV every 6 hours — hospital-acquired pneumonia",
+      "authored_on": "2026-04-24"
+    },
+    {
+      "medication_name": "IV Furosemide 80mg",
+      "dosage": "Administer 80mg IV twice daily — acute decompensated heart failure",
+      "authored_on": "2026-04-24"
+    },
+    {
+      "medication_name": "Norepinephrine infusion 0.1 mcg/kg/min",
+      "dosage": "Continuous IV infusion — haemodynamic support, vasopressor dependency",
+      "authored_on": "2026-04-27"
+    }
+  ],
+
+  "conditions": [
+    {
+      "condition_name": "Acute Decompensated Heart Failure (EF 22%)",
+      "severity": "Severe",
+      "onset": "2026-04-23"
+    },
+    {
+      "condition_name": "Hospital-Acquired Pneumonia — right lower lobe",
+      "severity": "Severe",
+      "onset": "2026-04-24"
+    },
+    {
+      "condition_name": "Severe Normocytic Anaemia (Hb 6.1 g/dL) — under investigation",
+      "severity": "Severe",
+      "onset": "2026-04-25"
+    },
+    {
+      "condition_name": "Chronic Systolic Heart Failure — known, decompensating",
+      "severity": "Severe",
+      "onset": "2023-11-08"
+    },
+    {
+      "condition_name": "Atrial Fibrillation with Rapid Ventricular Response",
+      "severity": "Moderate",
+      "onset": "2026-04-26"
+    },
+    {
+      "condition_name": "Type 2 Respiratory Failure requiring BiPAP",
+      "severity": "Severe",
+      "onset": "2026-04-27"
+    }
+  ],
+
+  "observations": [
+    {
+      "name": "Heart Rate",
+      "value": 124,
+      "unit": "beats/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T05:00:00Z",
+      "_note": "ANOMALY: tachycardia, AF with rapid ventricular response"
+    },
+    {
+      "name": "Body Temperature",
+      "value": 38.9,
+      "unit": "°C",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T05:00:00Z",
+      "_note": "ANOMALY: febrile — active pneumonia"
+    },
+    {
+      "name": "Oxygen Saturation",
+      "value": 87,
+      "unit": "%",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T05:00:00Z",
+      "_note": "CRITICAL ANOMALY: on BiPAP — SpO2 still critically low"
+    },
+    {
+      "name": "Respiratory Rate",
+      "value": 32,
+      "unit": "breaths/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T05:00:00Z",
+      "_note": "ANOMALY: severely elevated, respiratory distress"
+    },
+    {
+      "name": "Body Weight",
+      "value": 102.3,
+      "unit": "kg",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T05:00:00Z",
+      "_note": "ANOMALY: 8kg above admission weight — fluid overload"
+    },
+    {
+      "name": "Haemoglobin",
+      "value": 6.1,
+      "unit": "g/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T05:30:00Z",
+      "_note": "CRITICAL ANOMALY: severe anaemia — transfusion in progress"
+    },
+    {
+      "name": "Troponin I (High Sensitivity)",
+      "value": 4820,
+      "unit": "ng/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T22:00:00Z",
+      "_note": "CRITICAL ANOMALY: massively elevated — NSTEMI vs demand ischaemia being evaluated"
+    },
+    {
+      "name": "BNP (B-type Natriuretic Peptide)",
+      "value": 4100,
+      "unit": "pg/mL",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T05:30:00Z",
+      "_note": "CRITICAL ANOMALY: severely elevated — decompensated heart failure"
+    },
+    {
+      "name": "Serum Creatinine",
+      "value": 2.2,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T05:30:00Z",
+      "_note": "ANOMALY: cardiorenal syndrome, worsening"
+    },
+    {
+      "name": "Lactate",
+      "value": 3.8,
+      "unit": "mmol/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T05:30:00Z",
+      "_note": "ANOMALY: elevated — tissue hypoperfusion"
+    },
+    {
+      "name": "White Blood Cell Count",
+      "value": 19.6,
+      "unit": "10^9/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T05:30:00Z",
+      "_note": "ANOMALY: leukocytosis from active pulmonary infection"
+    },
+    {
+      "name": "International Normalised Ratio (INR)",
+      "value": 2.8,
+      "unit": "ratio",
+      "category": "laboratory",
+      "effective_date": "2026-04-28T05:30:00Z",
+      "_note": "ANOMALY: coagulopathy — risk of bleeding complications"
+    }
+  ],
+
+  "blood_pressure": {
+    "effective_date": "2026-04-28T05:00:00Z",
+    "systolic":  { "value": 88,  "unit": "mmHg" },
+    "diastolic": { "value": 54,  "unit": "mmHg" },
+    "_note": "CRITICAL ANOMALY: hypotension requiring vasopressor support"
+  },
+
+  "diagnostic_reports": [
+    {
+      "report_name": "Echocardiogram",
+      "conclusion": "CRITICAL FINDINGS: Severely reduced left ventricular ejection fraction at 22% (prior baseline 35%). Global hypokinesia. Moderate-to-severe mitral regurgitation. Dilated left ventricle. Right ventricular function mildly impaired. Small pericardial effusion. Findings consistent with acute-on-chronic decompensated systolic heart failure. Urgent cardiology input required. Cardiac ICU transfer recommended."
+    },
+    {
+      "report_name": "CT Pulmonary Angiogram",
+      "conclusion": "CRITICAL FINDINGS: Right lower lobe consolidation consistent with hospital-acquired pneumonia. Bilateral pleural effusions — moderate right, small left. No pulmonary embolism identified. Cardiomegaly with pulmonary venous congestion. Air bronchograms within the consolidation. Clinical picture supports concurrent pneumonia and cardiogenic pulmonary oedema — dual pathology requiring concurrent aggressive management."
+    },
+    {
+      "report_name": "Cardiology & Haematology Joint Review",
+      "conclusion": "CRITICAL ANOMALIES DOCUMENTED: (1) Troponin I 4820 ng/L — NSTEMI cannot be excluded; cardiology team to perform urgent catheterisation risk-benefit assessment. (2) Haemoglobin 6.1 g/dL — active packed red cell transfusion underway; bone marrow cause vs chronic disease vs haemolysis under investigation. (3) Vasopressor dependency (norepinephrine 0.1 mcg/kg/min) — haemodynamically unstable. (4) INR 2.8 — bleeding risk limits invasive procedures. Patient requires multi-disciplinary ICU management."
+    }
+  ]
+}

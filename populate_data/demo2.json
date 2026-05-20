@@ -1,0 +1,133 @@
+{
+  "patient": {
+    "resourceType": "Patient",
+    "name": [{ "use": "official", "family": "Thompson", "given": ["Ryan", "James"] }],
+    "gender": "male",
+    "birthDate": "1990-07-22",
+    "active": true,
+    "telecom": [
+      { "system": "phone", "value": "+1-303-555-0147", "use": "mobile" },
+      { "system": "email", "value": "ryan.thompson@email.com", "use": "home" }
+    ],
+    "address": [
+      {
+        "use": "home",
+        "line": ["112 Maple Grove Lane"],
+        "city": "Denver",
+        "state": "CO",
+        "postalCode": "80203",
+        "country": "US"
+      }
+    ],
+    "maritalStatus": { "text": "Single" }
+  },
+
+  "medications": [
+    {
+      "medication_name": "Amoxicillin 500mg",
+      "dosage": "Take 1 capsule three times daily for 7 days",
+      "authored_on": "2026-04-25"
+    },
+    {
+      "medication_name": "Ibuprofen 400mg",
+      "dosage": "Take 1 tablet every 8 hours as needed for pain",
+      "authored_on": "2026-04-25"
+    }
+  ],
+
+  "conditions": [
+    {
+      "condition_name": "Mild Community-Acquired Pneumonia (resolving)",
+      "severity": "Mild",
+      "onset": "2026-04-20"
+    },
+    {
+      "condition_name": "Seasonal Allergic Rhinitis",
+      "severity": "Mild",
+      "onset": "2022-03-10"
+    }
+  ],
+
+  "observations": [
+    {
+      "name": "Heart Rate",
+      "value": 72,
+      "unit": "beats/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T08:00:00Z"
+    },
+    {
+      "name": "Body Temperature",
+      "value": 36.6,
+      "unit": "°C",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T08:00:00Z"
+    },
+    {
+      "name": "Oxygen Saturation",
+      "value": 99,
+      "unit": "%",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T08:00:00Z"
+    },
+    {
+      "name": "Respiratory Rate",
+      "value": 14,
+      "unit": "breaths/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T08:00:00Z"
+    },
+    {
+      "name": "Body Weight",
+      "value": 78.0,
+      "unit": "kg",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T08:00:00Z"
+    },
+    {
+      "name": "White Blood Cell Count",
+      "value": 8.2,
+      "unit": "10^9/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T07:00:00Z"
+    },
+    {
+      "name": "Haemoglobin",
+      "value": 14.8,
+      "unit": "g/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T07:00:00Z"
+    },
+    {
+      "name": "C-Reactive Protein",
+      "value": 6.1,
+      "unit": "mg/L",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T07:00:00Z"
+    },
+    {
+      "name": "Serum Creatinine",
+      "value": 0.88,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-04-27T07:00:00Z"
+    }
+  ],
+
+  "blood_pressure": {
+    "effective_date": "2026-04-28T08:00:00Z",
+    "systolic":  { "value": 118, "unit": "mmHg" },
+    "diastolic": { "value": 76,  "unit": "mmHg" }
+  },
+
+  "diagnostic_reports": [
+    {
+      "report_name": "Chest X-Ray",
+      "conclusion": "Significant interval improvement from prior film. Minimal residual right lower lobe haziness, consistent with resolving pneumonia. No pleural effusion. No pneumothorax. Heart size normal. Patient is clinically stable and radiologically improving — suitable for discharge with oral antibiotics."
+    },
+    {
+      "report_name": "Complete Blood Count",
+      "conclusion": "WBC 8.2 — within normal limits, indicating resolving infection. Haemoglobin 14.8 g/dL — normal. Platelets adequate. No concerning haematological findings. Supports clinical decision for discharge."
+    }
+  ]
+}

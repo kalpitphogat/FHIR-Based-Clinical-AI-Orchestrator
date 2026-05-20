@@ -1,0 +1,165 @@
+{
+  "patient": {
+    "resourceType": "Patient",
+    "name": [
+      {
+        "use": "official",
+        "family": "Ramirez",
+        "given": ["Elena", "Sofia"]
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1987-03-14",
+    "active": true,
+    "telecom": [
+      { "system": "phone", "value": "+1-512-555-0192", "use": "mobile" },
+      { "system": "email", "value": "elena.ramirez@email.com", "use": "home" }
+    ],
+    "address": [
+      {
+        "use": "home",
+        "line": ["4821 Willow Creek Drive"],
+        "city": "Austin",
+        "state": "TX",
+        "postalCode": "78745",
+        "country": "US"
+      }
+    ],
+    "maritalStatus": {
+      "text": "Married"
+    }
+  },
+
+  "medications": [
+    {
+      "medication_name": "Metformin 500mg",
+      "dosage": "Take 1 tablet twice daily with meals",
+      "authored_on": "2025-11-10"
+    },
+    {
+      "medication_name": "Lisinopril 10mg",
+      "dosage": "Take 1 tablet once daily in the morning",
+      "authored_on": "2025-08-22"
+    },
+    {
+      "medication_name": "Atorvastatin 20mg",
+      "dosage": "Take 1 tablet once daily at bedtime",
+      "authored_on": "2025-08-22"
+    },
+    {
+      "medication_name": "Levothyroxine 50mcg",
+      "dosage": "Take 1 tablet once daily on an empty stomach",
+      "authored_on": "2024-03-05"
+    }
+  ],
+
+  "conditions": [
+    {
+      "condition_name": "Type 2 Diabetes Mellitus",
+      "severity": "Moderate",
+      "onset": "2023-06-01"
+    },
+    {
+      "condition_name": "Essential Hypertension",
+      "severity": "Mild",
+      "onset": "2023-08-15"
+    },
+    {
+      "condition_name": "Hypothyroidism",
+      "severity": "Mild",
+      "onset": "2021-02-20"
+    },
+    {
+      "condition_name": "Hyperlipidemia",
+      "severity": "Moderate",
+      "onset": "2023-08-15"
+    }
+  ],
+
+  "observations": [
+    {
+      "name": "Heart Rate",
+      "value": 78,
+      "unit": "beats/min",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T09:15:00Z"
+    },
+    {
+      "name": "Body Temperature",
+      "value": 36.7,
+      "unit": "°C",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T09:15:00Z"
+    },
+    {
+      "name": "Oxygen Saturation",
+      "value": 98,
+      "unit": "%",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T09:15:00Z"
+    },
+    {
+      "name": "Body Weight",
+      "value": 72.4,
+      "unit": "kg",
+      "category": "vital-signs",
+      "effective_date": "2026-04-28T09:15:00Z"
+    },
+    {
+      "name": "HbA1c",
+      "value": 7.2,
+      "unit": "%",
+      "category": "laboratory",
+      "effective_date": "2026-03-10T08:00:00Z"
+    },
+    {
+      "name": "Fasting Blood Glucose",
+      "value": 138,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-03-10T08:00:00Z"
+    },
+    {
+      "name": "Total Cholesterol",
+      "value": 195,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-03-10T08:00:00Z"
+    },
+    {
+      "name": "TSH (Thyroid Stimulating Hormone)",
+      "value": 2.8,
+      "unit": "mIU/L",
+      "category": "laboratory",
+      "effective_date": "2026-03-10T08:00:00Z"
+    },
+    {
+      "name": "Serum Creatinine",
+      "value": 0.85,
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "effective_date": "2026-03-10T08:00:00Z"
+    }
+  ],
+
+  "blood_pressure": {
+    "effective_date": "2026-04-28T09:15:00Z",
+    "systolic": { "value": 128, "unit": "mmHg" },
+    "diastolic": { "value": 82, "unit": "mmHg" }
+  },
+
+  "diagnostic_reports": [
+    {
+      "report_name": "Comprehensive Metabolic Panel",
+      "conclusion": "Mild elevation in fasting glucose consistent with known Type 2 Diabetes. Kidney and liver function within normal limits. Electrolytes balanced. Continue current medication regimen and dietary modifications."
+    },
+    {
+      "report_name": "Thyroid Function Panel",
+      "conclusion": "TSH within normal therapeutic range on Levothyroxine 50mcg. Free T4 normal. No dose adjustment required. Follow up in 6 months."
+    },
+    {
+      "report_name": "Lipid Panel",
+      "conclusion": "Total cholesterol borderline. LDL mildly elevated at 118 mg/dL. HDL adequate at 52 mg/dL. Triglycerides normal. Continue statin therapy and advise low-saturated-fat diet."
+    }
+  ]
+}
